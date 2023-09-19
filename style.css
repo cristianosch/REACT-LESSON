@@ -1,0 +1,24 @@
+body{
+    font-family: 'roboto';
+    margin-left: 5%;
+    background-color: rgb(252, 240, 225);}
+
+.blue{
+    color:rgb(24, 24, 216);
+}
+
+.red{
+    color:rgb(205, 75, 75);
+}
+
+.space{
+    margin-left: 5%;
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+    margin: 2%;
+}
+.area{    
+    margin-left: 5%;
+}

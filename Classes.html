@@ -1,0 +1,83 @@
+<!--Classes
+ES6 introduced classes.
+
+A class is a type of function, but instead of using the keyword function to initiate it, we use the keyword class, and the properties are assigned inside a constructor() method.-->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+  
+<script>
+
+/*Example
+Create an object called "mycar" based on the Car class:*/
+
+class Car {
+  constructor(name) {
+    this.brand = name;
+  }
+}
+
+const mycar = new Car("Ford");
+
+document.write(mycar.brand);
+
+</script>
+
+<br>
+
+<script>
+
+/*Example
+Create a method named "present":*/
+
+class Carro {
+  constructor(name) {
+    this.brand = name;
+  }
+
+  present() {
+    return 'I have a ' + this.brand;
+  }
+}
+
+const mycarro = new Carro("Mustang");
+document.write(mycarro.present());
+
+</script>
+
+<br>
+
+<script>
+
+/*Example
+Create a class named "Model" which will inherit the methods from the "Cars" class:*/
+
+class Cars {
+  constructor(name) {
+    this.brand = name;
+  }
+
+  present() {
+    return 'I have a ' + this.brand;
+  }
+}
+
+class Model extends Cars {
+  constructor(name, mod) {
+    super(name);
+    this.model = mod;
+  }  
+  show() {
+    return this.present() + ', it is a ' + this.model
+  }
+}
+
+const mycars = new Model("Ford", "Mustang");
+document.write(mycars.show());
+
+</script>
+
+</body>
+</html>
