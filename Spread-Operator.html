@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>REACT Spread Operator</title>
+</head>
+<body>
+    <h1>REACT - Spread Operator</h1>
+    <h2 class="red">Example</h2>
+
+    <div class="container">
+        <div class="area">
+            <p class="space">
+                const numbersOne = [1, 2, 3];<br>
+                const numbersTwo = [4, 5, 6];<br>
+                const numbersCombined = [...numbersOne, ...numbersTwo];<br><br>
+            
+
+                <strong>Output</strong><br><br>
+                <script>
+                    const numbersOne = [1, 2, 3];
+                    const numbersTwo = [4, 5, 6];
+                    const numbersCombined = [...numbersOne, ...numbersTwo];
+
+                    document.write(numbersCombined);
+
+                </script>
+            </p>
+        </div>
+    </div>
+    <p>The spread operator is often used in combination with destructuring.
+        Assign the first and second items from numbers to variables and put the rest in an array.
+    </p>
+    <h2 class="red">Example</h2>
+    <div class="container">
+        <div class="area">
+            <p class="space">
+                const [one, two, ...rest] = numbers;
+            </p>
+        </div>
+    </div>
+    <p>We can use the spread operator with objects too:</p>
+    <h2 class="red">Example</h2>
+    <div class="container">
+        <div class="area">          
+              <p>const myVehicle = {<br></p>
+<p class="space">   brand: 'Ford',<br>
+                    model: 'Mustang',<br>
+                    color: 'red'</p>
+<p>                 }</p><br>
+
+<p>                const updateMyVehicle = {<br></p>
+<p class="space">       type: 'car',<br>
+                        year: 2021, <br>
+                        color: 'yellow'<br></p>
+<p>                   }</p><br>
+
+<p>                const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}<br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

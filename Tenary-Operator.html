@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <title>React ES6 Ternary Operator</title>
+</head>
+<body>
+    <h1>React ES6 Ternary Operator</h1>
+    <p>The ternary operator is a simplified conditional operator like if / else.<br></p>
+
+    <p class="blue">    Syntax: condition ? &lt; expression if true &gt; : ? &lt; expression if false &gt;<br></p>
+
+    <p>Here is an example using if / else:</p>
+
+    <h2 class="red">Example</h2>
+    <div class="container">
+        <div class="area">
+            <p>if (authenticated) {</p>
+            <p class="space">renderApp();</p>
+            <p>} else {</p>            
+            <p>renderLogin();</p>
+            <p>}</p>
+
+            <script>
+                function renderApp() {
+                  document.getElementById("demo").innerHTML = "Welcome!";
+                }
+
+                function renderLogin() {
+                  document.getElementById("demo").innerHTML = "Please log in";
+                }
+
+                let authenticated = true;
+
+                if (authenticated) {
+                  renderApp();
+                } else {
+                  renderLogin();
+                }
+
+            </script>
+        </div>
+    </div>
+
+    <p>Here is the same example using a ternary operator:</p>
+    <h2 class="red">Example</h2>
+    <p>With Ternary</p>
+        <div class="container">            
+            <div class="area">                
+                <p>authenticated ? renderApp() : renderLogin();</p>
+            </div>
+        </div>
+</body>
+</html>
